@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header-->
+    <div class="header">
+        <div class="page">
+            <header>
+                <div class="profil">
+
+                    <img class="profil-icon" src="img/profil-icon.png" alt="">
+
+                    <h1>Лента друзей</h1>
+
+                </div><!--./Profil-->
+
+                <img class="filtr" src="img/filtr.png" alt="">
+
+            </header>
+        </div><!--./Page-->
+    </div><!--/.Header-->
+
+    <div class="predloz">
+        <img class="predloz-icon" src="img/predloz-icon.png" alt="">
+        <img class="predloz-icon" src="img/predloz-icon1.png" alt="">
+        <img class="predloz-icon" src="img/predloz-icon2.png" alt="">
+        <img class="predloz-icon" src="img/predloz-icon4.png" alt="">
+        <img class="predloz-icon" src="img/predloz-icon3.png" alt="">
+    </div>
+
+    <!--Lenta-->
+    <main class="lenta">
+        <div class="page">
+            <div class="anket">
+                <div class="profil-anket">
+
+                    <img class="profil-icon" src="img/profil-anket.png" alt="">
+
+                    <div class="nickname">
+                        <h1>Антон, 18 лет</h1>
+                        <p>г. Йошкар-ола, Россия</p>
+                    </div>
+
+                    <button class="more">
+                        <img class="more-img" src="img/more.png" alt="">
+                    </button>
+
+                </div>
+
+                <div class="text">
+                    <p>Хааай, ищу друзей по интересам, увлекаюсь музыкой, играю на гитаре, хочу создать музыкальную группу</p>
+                </div>
+
+                <div class="intresting">
+                    <h1>Интересы</h1>
+                    <div class="intrest-pl">
+                        <div class="plashka">
+                            <p href>Рок</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Музыка</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Общение</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Танцы</p>
+                        </div>
+                    </div>
+                </div><!--./Intresting-->
+
+                <div class="anket-btn">
+                    <button class="btn-write" id="btn-write" onclick="chengeImg()">
+                        <p>Написать</p>
+                    </button>
+                    <script>
+                        function chengeImg() {
+                            let image = document.getElementById('profil-icon');
+
+                            if (image.src.match('')){
+                                image.src = 'img/profil-anket.png'
+                            }
+                            else {
+                                image.src = ''
+                            }
+                        }
+                    </script>
+                    <button class="btn-star">
+                        <img src="img/star.png" alt="" id="star4" onclick="chengestar4() ">
+                    </button>
+                </div>
+                <script>
+                    function chengestar4() {
+                    let image = document.getElementById('star4');
+
+                    if (image.src.match('img/star.png')){
+                        image.src = 'img/star-post.png'
+                    }
+                    else {
+                        image.src = 'img/star.png'
+                    }
+                }
+                </script>
+            </div><!--./Anket-->
+
+            <div class="anket">
+                <div class="profil-anket">
+
+                    <img class="profil-icon" src="img/profil-anket1.png" alt="">
+
+                    <div class="nickname">
+                        <h1>Ася, 18 лет</h1>
+                        <p>г. Йошкар-ола, Россия</p>
+                    </div>
+
+                    <button class="more">
+                        <img class="more-img" src="img/more.png" alt="">
+                    </button>
+
+                </div>
+
+                <div class="text">
+                    <p>Хааай, ищу друзей по интересам, увлекаюсь музыкой, играю на гитаре, хочу создать музыкальную группу. Хааай, ищу друзей по интересам, увлекаюсь музыкой, играю на гитаре, хочу создать музыкальную группу.Хааай, ищу друзей по интересам, увлекаюсь музыкой, играю на гитаре, хочу создать музыкальную группуХааай, ищу друзей по интересам, увлекаюсь музыкой, играю на гитаре, хочу создать музыкальную группуХааай, ищу друзей по интересам, увлекаюсь музыкой, играю на гитаре, хочу создать музыкальную группу</p>
+                </div>
+
+                <div class="intresting">
+                    <h1>Интересы</h1>
+                    <div class="intrest-pl">
+                        <div class="plashka">
+                            <p href>Рок</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Музыка</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Общение</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Танцы</p>
+                        </div>
+                    </div>
+                </div><!--./Intresting-->
+                <div class="anket-btn">
+                    <button class="btn-write" id="btn-write1" onclick="chengeImg1()">
+                        <p>Написать</p>
+                    </button>
+                    <script>
+                        function chengeImg1() {
+                        let image = document.getElementById('profil-icon');
+
+                        if (image.src.match('')){
+                            image.src = 'img/profil-anket1.png'
+                        }
+                        else {
+                            image.src = ''
+                        }
+                    }
+                    </script>
+                    <button class="btn-star">
+                        <img src="img/star.png" alt="" id="star3" onclick="chengestar3() ">
+                    </button>
+                </div>
+                <script>
+                    function chengestar3() {
+                    let image = document.getElementById('star3');
+
+                    if (image.src.match('img/star.png')){
+                        image.src = 'img/star-post.png'
+                    }
+                    else {
+                        image.src = 'img/star.png'
+                    }
+                }
+                </script>
+            </div><!--./Anket-->
+
+            <div class="anket">
+                <div class="profil-anket">
+
+                    <img class="profil-icon" src="img/profil-anket2.png" alt="">
+
+                    <div class="nickname">
+                        <h1>Андрей, 18 лет</h1>
+                        <p>г. Йошкар-ола, Россия</p>
+                    </div>
+
+                    <button class="more">
+                        <img class="more-img" src="img/more.png" alt="">
+                    </button>
+
+                </div>
+
+                <div class="text">
+                    <p>Хааай, ищу друзей по интересам, увлекаюсь музыкой, играю на гитаре</p>
+                </div>
+
+                <div class="intresting">
+                    <h1>Интересы</h1>
+                    <div class="intrest-pl">
+                        <div class="plashka">
+                            <p href>Рок</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Музыка</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Общение</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Танцы</p>
+                        </div>
+                    </div>
+                </div><!--./Intresting-->
+                <div class="anket-btn">
+                    <button class="btn-write" id="btn-write2" onclick="chengeImg2()">
+                        <p>Написать</p>
+                    </button>
+                    <script>
+                        function chengeImg2() {
+                        let image = document.getElementById('profil-icon');
+
+                        if (image.src.match('')){
+                            image.src = 'img/profil-anket2.png'
+                        }
+                        else {
+                            image.src = ''
+                        }
+                    }
+                    </script>
+                    <button class="btn-star">
+                        <img src="img/star.png" alt="" id="star2" onclick="chengestar2() ">
+                    </button>
+                </div>
+                <script>
+                    function chengestar2() {
+                    let image = document.getElementById('star2');
+
+                    if (image.src.match('img/star.png')){
+                        image.src = 'img/star-post.png'
+                    }
+                    else {
+                        image.src = 'img/star.png'
+                    }
+                }
+                </script>
+            </div><!--./Anket-->
+
+            <div class="anket">
+                <div class="profil-anket">
+
+                    <img class="profil-icon" src="img/profil-anket3.png" alt="">
+
+                    <div class="nickname">
+                        <h1>Ким, 18 лет</h1>
+                        <p>г. Йошкар-ола, Россия</p>
+                    </div>
+
+                    <button class="more">
+                        <img class="more-img" src="img/more.png" alt="">
+                    </button>
+
+                </div>
+
+                <div class="text">
+                    <p>Хааай, ищу друзей по интересам, увлекаюсь музыкой, играю на гитаре.Хааай, ищу друзей по интересам, увлекаюсь музыкой, играю на гитареХааай, ищу друзей по интересам, увлекаюсь музыкой, играю на гитаре</p>
+                </div>
+
+                <div class="intresting">
+                    <h1>Интересы</h1>
+                    <div class="intrest-pl">
+                        <div class="plashka">
+                            <p href>Рок</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Музыка</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Общение</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Танцы</p>
+                        </div>
+                    </div>
+                </div><!--./Intresting-->
+                <div class="anket-btn" onclick="chengeImg3()">
+                    <button class="btn-write" id="btn-write3">
+                        <p>Написать</p>
+                    </button>
+                    <script>
+                        function chengeImg3() {
+                        let image = document.getElementById('profil-icon');
+
+                        if (image.src.match('')){
+                            image.src = 'img/profil-anket3.png'
+                        }
+                        else {
+                            image.src = ''
+                        }
+                    }
+                    </script>
+                    <button class="btn-star">
+                        <img src="img/star.png" alt="" id="star1" onclick="chengestar1() ">
+                    </button>
+                </div>
+                <script>
+                    function chengestar1() {
+                    let image = document.getElementById('star1');
+
+                    if (image.src.match('img/star.png')){
+                        image.src = 'img/star-post.png'
+                    }
+                    else {
+                        image.src = 'img/star.png'
+                    }
+                }
+                </script>
+            </div><!--./Anket-->
+
+            <div class="anket">
+                <div class="profil-anket">
+
+                    <img class="profil-icon" src="img/profil-anket4.png" alt="">
+
+                    <div class="nickname">
+                        <h1>Лина, 18 лет</h1>
+                        <p>г. Йошкар-ола, Россия</p>
+                    </div>
+
+                    <button class="more">
+                        <img class="more-img" src="img/more.png" alt="">
+                    </button>
+
+                </div>
+
+                <div class="text">
+                    <p>Хааай, ищу друзей</p>
+                </div>
+
+                <div class="intresting">
+                    <h1>Интересы</h1>
+                    <div class="intrest-pl">
+                        <div class="plashka">
+                            <p href>Рок</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Музыка</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Общение</p>
+                        </div>
+                        <div class="plashka">
+                            <p href>Танцы</p>
+                        </div>
+                    </div>
+                </div><!--./Intresting-->
+                <div class="anket-btn">
+                    <button class="btn-write " id="btn-write4" onclick="chengeImg4()">
+                        <p>Написать</p>
+                    </button>
+                    <script>
+                        function chengeImg4() {
+                        let image = document.getElementById('profil-icon');
+
+                        if (image.src.match('')){
+                            image.src = 'img/profil-anket4.png'
+                        }
+                        else {
+                            image.src = ''
+                        }
+                    }
+                    </script>
+                    <button class="btn-star">
+                        <img src="img/star.png" alt="" id="star" onclick="chengestar() ">
+                    </button>
+                </div>
+                <script>
+                    function chengestar() {
+                    let image = document.getElementById('star');
+
+                    if (image.src.match('img/star.png')){
+                        image.src = 'img/star-post.png'
+                    }
+                    else {
+                        image.src = 'img/star.png'
+                    }
+                }
+                </script>
+            </div><!--./Anket-->
+        </div><!--./Page-->
+    </main><!--./Lenta-->
+
+    <!--Navigation-->
+    <nav class="nav">
+        <div class="nav-btn">
+
+            <div class="left-btn">
+                <button>
+                    <img class="nav-btn-img" src="img/chats.png" alt="">
+                </button>
+                <button>
+                    <img class="nav-btn-img left-btn-img" src="img/soob.png" alt="">
+                </button>
+            </div>
+
+            <buttom class="osn-nav-btn">
+                <img class="osn-nav-btn-img" src="img/osn-btn.png" alt="">
+            </buttom>
+
+            <div class="right-btn">
+                <button>
+                    <img class="nav-btn-img profil-btn-img right-btn-img" src="img/profil.png" alt="">
+                </button>
+                <button>
+                    <img class="nav-btn-img" src="img/yved.png" alt="">
+                </button>
+            </div>
+        </button>
+    </nav>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+
+            <div class="close" id="close"></div>
+
+            <img clasa="profil-icon" id= 'profil-icon' src="" alt="">
+
+            <form class="modal-form">
+                <textarea class="modal-input" placeholder="Напишите что-нибудь интересное"></textarea>
+                <button class="submit" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+
+
+</body>
+</html>
