@@ -91,21 +91,9 @@
                         }
                     </script>
                     <button class="btn-star">
-                        <img src="img/star.png" alt="" id="star4" onclick="chengestar4() ">
+                        <img src="img/star.png" alt="" id="star4">
                     </button>
                 </div>
-                <script>
-                    function chengestar4() {
-                    let image = document.getElementById('star4');
-
-                    if (image.src.match('img/star.png')){
-                        image.src = 'img/star-post.png'
-                    }
-                    else {
-                        image.src = 'img/star.png'
-                    }
-                }
-                </script>
             </div><!--./Anket-->
 
             <div class="anket">
@@ -162,21 +150,9 @@
                     }
                     </script>
                     <button class="btn-star">
-                        <img src="img/star.png" alt="" id="star3" onclick="chengestar3() ">
+                        <img src="img/star.png" alt="" id="star3">
                     </button>
                 </div>
-                <script>
-                    function chengestar3() {
-                    let image = document.getElementById('star3');
-
-                    if (image.src.match('img/star.png')){
-                        image.src = 'img/star-post.png'
-                    }
-                    else {
-                        image.src = 'img/star.png'
-                    }
-                }
-                </script>
             </div><!--./Anket-->
 
             <div class="anket">
@@ -233,21 +209,9 @@
                     }
                     </script>
                     <button class="btn-star">
-                        <img src="img/star.png" alt="" id="star2" onclick="chengestar2() ">
+                        <img src="img/star.png" alt="" id="star2">
                     </button>
                 </div>
-                <script>
-                    function chengestar2() {
-                    let image = document.getElementById('star2');
-
-                    if (image.src.match('img/star.png')){
-                        image.src = 'img/star-post.png'
-                    }
-                    else {
-                        image.src = 'img/star.png'
-                    }
-                }
-                </script>
             </div><!--./Anket-->
 
             <div class="anket">
@@ -304,21 +268,9 @@
                     }
                     </script>
                     <button class="btn-star">
-                        <img src="img/star.png" alt="" id="star1" onclick="chengestar1() ">
+                        <img src="img/star.png" alt="" id="star1">
                     </button>
                 </div>
-                <script>
-                    function chengestar1() {
-                    let image = document.getElementById('star1');
-
-                    if (image.src.match('img/star.png')){
-                        image.src = 'img/star-post.png'
-                    }
-                    else {
-                        image.src = 'img/star.png'
-                    }
-                }
-                </script>
             </div><!--./Anket-->
 
             <div class="anket">
@@ -375,20 +327,56 @@
                     }
                     </script>
                     <button class="btn-star">
-                        <img src="img/star.png" alt="" id="star" onclick="chengestar() ">
+                        <img src="img/star.png" alt="" id="star">
                     </button>
                 </div>
                 <script>
-                    function chengestar() {
                     let image = document.getElementById('star');
+                    image.addEventListener('click', function() {
 
-                    if (image.src.match('img/star.png')){
+                        if (image.src.match('img/star.png')){
                         image.src = 'img/star-post.png'
-                    }
-                    else {
+                        } else {
                         image.src = 'img/star.png'
-                    }
-                }
+                        }
+                    })
+                    let image1 = document.getElementById('star1');
+                    image1.addEventListener('click', function() {
+
+                        if (image1.src.match('img/star.png')){
+                        image1.src = 'img/star-post.png'
+                        } else {
+                        image1.src = 'img/star.png'
+                        }
+                    })
+                    let image2 = document.getElementById('star2');
+                    image2.addEventListener('click', function() {
+
+                        if (image2.src.match('img/star.png')){
+                        image2.src = 'img/star-post.png'
+                        } else {
+                        image2.src = 'img/star.png'
+                        }
+                    })
+                    let image3 = document.getElementById('star3');
+                    image3.addEventListener('click', function() {
+
+                        if (image3.src.match('img/star.png')){
+                        image3.src = 'img/star-post.png'
+                        } else {
+                        image3.src = 'img/star.png'
+                        }
+                    })
+                    let image4 = document.getElementById('star4');
+                    image4.addEventListener('click', function() {
+
+                        if (image4.src.match('img/star.png')){
+                        image4.src = 'img/star-post.png'
+                        } else {
+                        image4.src = 'img/star.png'
+                        }
+                    })
+
                 </script>
             </div><!--./Anket-->
         </div><!--./Page-->
