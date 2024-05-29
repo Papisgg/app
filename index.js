@@ -1,25 +1,18 @@
 //like-btn + modal
-const likeBtns = document.querySelectorAll('.like-btn');
+const likeBtns = document.querySelectorAll('#like-btn');
 const likeModal = document.getElementById('like-modal');
 
-let isActive = false;
+likeBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+        likeModal.classList.add('open');
+        this.setAttribute('disabled', 'disabled'); // Используем this для конкретной кнопки
 
-likeBtns.forEach((likeBtn) => {
-    likeBtn.addEventListener('click', function() {
-        isActive = !isActive;
-
-        if (isActive) {
-            likeBtn.classList.add('active');
-            likeModal.classList.add('open');
-
-            setTimeout(() => {
-                likeModal.classList.remove('open');
-            }, 2000);
-        } else {
-            likeBtn.classList.remove('active');
-        }
+        setTimeout(() => {
+            likeModal.classList.remove('open');
+        }, 2000);
     });
 });
+
 
 document.getElementById("more").addEventListener("click", function() {
     document.getElementById('more-modal').classList.add('open')
