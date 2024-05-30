@@ -35,4 +35,3 @@ document.getElementById("more-modal").addEventListener('click', event => {
     event.currentTarget.classList.remove("open");
 });
 
-
