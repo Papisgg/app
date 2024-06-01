@@ -639,17 +639,95 @@ textarea:required:invalid {
 .intrest-change {
     width: 100%;
     height: 53px;
-    color: #fff;
+    color: #000;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
 
-    border: none;
+    border: 1px solid #202DFD;
     border-radius: 10px;
 
-    background-color: #202DFD;
+    background-color: #fff;
 }
 
 
+/* intresting-page
+=======================================*/
+.intrestings-title {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba( 0, 0, 0, .5);
+    margin-top: 32px;
+    text-align: center;
+}
+
+.schiot {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #202DFD;
+}
+
+.intresting-form {
+    max-width: 300px;
+    padding-right: 10px;
+}
+
+.intresr-form-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 55px 0 25px 0;
+}
+
+.intrest-cont {
+    display: inline-block;
+    position: relative;
+
+    width: auto;
+    height: 38px;
+    padding-top: 10px;
+}
+
+.intrest {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    transition: all .3s;
+}
+
+.intrest:checked::after {
+    position: absolute;
+    visibility: visible;
+    content: url(img/close.png);
+    width: 9px;
+    height: 9px;
+    font-size: 20px;
+    color: #fff;
+    right: 6px;
+    top: -5px;
+    transition: all .3s;
+}
+
+.intrest-label {
+    border: 1px solid #202DFD;
+    border-radius: 10px;
+    padding: 8px 9px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.intrest:checked + .intrest-label {
+    background-color: #202DFD;
+    padding: 8px 30px 8px 11px;
+    color: #fff;
+    transition: all .3s;
+}
 
 
 
